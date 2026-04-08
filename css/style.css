@@ -25,6 +25,7 @@
     /* Feature Specific */
     --accent-responsibility: #9b6dff;
     --accent-date: #64ffda;
+    --nav-active-bg: #10614b; /* dark mode active nav background */
 }
 
 .light-theme {
@@ -44,6 +45,7 @@
     /* Feature Specific */
     --accent-responsibility: #4b3061;
     --accent-date: #008b8b;
+    --nav-active-bg: #0a0a0a; /* light mode active nav background */
 }
 
 /* Base Styles */
@@ -225,8 +227,15 @@ a:hover {
 .nav-links a {
     font-size: 14px;
     font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
 }
 
+.nav-links a.active {
+    background: var(--nav-active-bg);
+    color: var(--text-primary);
+}
 .nav-actions {
     display: flex;
     gap: 25px;

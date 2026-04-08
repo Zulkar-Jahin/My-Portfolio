@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initThemeSwitch();
     initCustomCursor();
     initScrollAnimations();
+    initNavActive();
 });
 
 function initThemeSwitch() {
@@ -185,3 +186,27 @@ function initTabs() {
         });
     });
 }
+
+
+function initNavActive() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const sectionToNav = {};
+    sections.forEach(sec => {
+        const id = sec.id;
+        const link = document.querySelector(`.nav-links a[href="#${id}"]`);
+        if (link) sectionToNav[id] = link;
+    });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.id;
+                navLinks.forEach(link => link.classList.remove('active'));
+                const activeLink = sectionToNav[id];
+                if (activeLink) activeLink.classList.add('active');
+            }
+        });
+    }, { threshold: 0.5 });
+    sections.forEach(sec => observer.observe(sec));
+}
+
