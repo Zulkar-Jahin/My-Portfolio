@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zulkar Jahin | Promblem Solver & Full Stack Developer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dark-theme">
+    <!-- Custom Cursor -->
+    <div class="cursor-glow"></div>
+    <div class="cursor"></div>
+
+    <!-- Animated Background Noise Filter -->
+    <div class="bg-noise"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-panel">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#about"><span class="accent-text">&lt;</span>
+                    Zulkar Jahin
+                    <span class="accent-text">&gt;</span></a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#goals">Goals</a>
+                    <a href="#education">Education</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#leetcode">LeetCode</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="https://drive.google.com/file/d/1IsUswGA4u0IEBt1csRfEFm8Cc6AZFAuL/view?usp=sharing"
+                        target="_blank" rel="noopener noreferrer" id="resumeBtn"
+                        class="btn btn-secondary nav-btn">Resume</a>
+                    <button id="themeToggle" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <button class="cmd-trigger">
+                        <i class="fa-solid fa-command"></i> Ctrl+K
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home / About Section -->
+        <section id="about" class="main-section fade-up">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="greeting">Hi, my name is Zulkar Jahin </p>
+                    <h1 class="heading-large">Problem Solver.</h1>
+                    <h2 class="heading-sub">I build things on the web.</h2>
+                    <p class="body-text limit-width">
+                        I'm a passionate junior software engineer and competitive programmer focused on solving complex
+                        problems through efficient code. I enjoy building high-performance digital experiences and
+                        constantly refining my algorithmic thinking. Currently, I'm focused on learning, growing, and
+                        building accessible,
+                        human-centered products.
+                    </p>
+                    <div class="action-buttons mt-8">
+                        <a href="#projects" class="btn btn-primary">Check out my work!</a>
+                    </div>
+                    <div class="follow-me">
+                        <span class="follow-me-label">Follow me on:</span>
+                        <div class="follow-links">
+                            <a href="https://github.com/zulkar-jahin" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com/in/zulkar-jahin-nizu-671729313/" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="mailto:zulkar.jahin@gmail.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Gmail"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="main-section fade-up">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-tab="technical">Technical</button>
+                    <button class="tab-btn" data-tab="tools">Tools</button>
+                    <button class="tab-btn" data-tab="soft">Soft Skills</button>
+                </div>
+
+                <div class="skills-content">
+                    <!-- Technical Tab -->
+                    <div class="tab-pane active fade-up visible" id="tab-technical">
+                        <div class="skills-grid">
+                            <div class="glass-card skill-category">
+                                <h3><i class="fa-solid fa-laptop-code"></i> Frontend Development</h3>
+                                <ul class="tag-list">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript (ES6+)</li>
+                                    <li>React</li>
+                                </ul>
+                            </div>
+                            <div class="glass-card skill-category">
+                                <h3><i class="fa-solid fa-microchip"></i> Backend Development</h3>
+                                <ul class="tag-list">
+                                    <li>Node.js (Learning)</li>
+                                    <li>Python (Learning)</li>
+                                </ul>
+                            </div>
+                            <div class="glass-card skill-category">
+                                <h3><i class="fa-solid fa-database"></i> Database & Cloud</h3>
+                                <ul class="tag-list">
+                                    <li>MySQL</li>
+                                    <li>Firebase</li>
+                                    <li>PostgreSQL (Learning)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Tools Tab -->
+                    <div class="tab-pane hidden-initially" id="tab-tools">
+                        <div class="skills-grid">
+                            <div class="glass-card skill-category">
+                                <h3><i class="fa-solid fa-toolbox"></i> Development Tools</h3>
+                                <ul class="tag-list">
+                                    <li>VS Code</li>
+                                    <li>Git & GitHub</li>
+                                </ul>
+                            </div>
+                            <div class="glass-card skill-category">
+                                <h3><i class="fa-solid fa-palette"></i> Design Tools</h3>
+                                <ul class="tag-list">
+                                    <li>Figma</li>
+                                    <li>Adobe XD</li>
+                                </ul>
+                            </div>
+                            <div class="glass-card skill-category">
+                                <h3><i class="fa-solid fa-terminal"></i> IDEs</h3>
+                                <ul class="tag-list">
+                                    <li>Visual Studio Code</li>
+                                    <li>Visual Studio</li>
+                                    <li>Sublime Text</li>
+                                    <li>Android Studio</li>
+                                </ul>
+                            </div>
+                            <div class="glass-card skill-category">
+                                <h3><i class="fa-solid fa-cloud-arrow-up"></i> Deployment</h3>
+                                <ul class="tag-list">
+                                    <li>Vercel</li>
+                                    <li>Netlify</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills Tab -->
+                    <div class="tab-pane hidden-initially" id="tab-soft">
+                        <div class="skills-grid">
+                            <div class="glass-card skill-category">
+                                <h3><i class="fa-solid fa-brain"></i> Soft Skills</h3>
+                                <ul class="tag-list">
+                                    <li>Problem Solving</li>
+                                    <li>Communication</li>
+                                    <li>Attention to Detail</li>
+                                    <li>Team Collaboration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Goals Section -->
+        <section id="goals" class="main-section fade-up">
+            <div class="container">
+                <h2 class="section-title">Goals</h2>
+                <div class="goals-container glass-card">
+                    <h3><i class="fa-solid fa-bullseye"></i> Current Goals</h3>
+                    <p>My short-term goal is to contribute to meaningful open-source projects and solidify my backend
+                        architecture knowledge. Long-term, I aspire to be a Full-Stack Engineer who architects
+                        accessible,
+                        high-performance web applications that leave a positive impact.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="main-section fade-up">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+
+                <div class="timeline">
+                    <!-- University Details -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <span class="timeline-date">2021 - 2025</span>
+                            <h3>B.S. in Computer Science & Engineering</h3>
+                            <h4>Ahsanullah University of Science and Technology (AUST)</h4>
+                            <div class="timeline-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</span>
+                                <span class="badge badge-success">Graduated December 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- College Details -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <span class="timeline-date">2018 - 2020</span>
+                            <h3>Higher Secondary Certificate (HSC)</h3>
+                            <h4>St. Joseph Higher Secondary School (SJHSS)</h4>
+                            <div class="timeline-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</span>
+                                <span class="badge badge-success">Graduated</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- School Details-->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <span class="timeline-date">2013 - 2018</span>
+                            <h3>Secondary School Certificate (SSC)</h3>
+                            <h4>Bindubasini Government Boys' High School (BGBHS)</h4>
+                            <div class="timeline-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Tangail, Bangladesh</span>
+                                <span class="badge badge-success">Completed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="main-section fade-up">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card glass-card">
+                        <h3 class="project-title">OpenZen</h3>
+                        <div class="project-description">
+                            <p>A modular productivity ecosystem featuring a Pomodoro timer, Kanban board, and dynamic
+                                task tracking, currently being scaled to include global leaderboards and performance
+                                analytics.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>JavaScript (ES6+)</li>
+                            <li>CSS3</li>
+                            <li>DOM Manipulation</li>
+                            <li>Kandan Board</li>
+                        </ul>
+                        <div class="project-actions">
+                            <!-- Git Repo Link -->
+                            <a href="https://github.com/Zulkar-Jahin/OpenZen" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+                            <!-- Live Preview Link -->
+                            <a href="https://open-zen-five.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-secondary btn-sm"><i class="fa-solid fa-up-right-from-square"></i>
+                                Live</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="project-card glass-card">
+                        <h3 class="project-title">Expense Pro</h3>
+                        <div class="project-description">
+                            <p>A full-stack web application with transaction management, featuring sorting, filtering,
+                                and pagination for 100+ monthly transactions.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>C#</li>
+                            <li>ASP.NET</li>
+                            <li>UI/UX</li>
+                        </ul>
+                        <div class="project-actions">
+                            <!-- Git Repo Link -->
+                            <a href="https://github.com/Zulkar-Jahin/Expense_Pro" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary btn-sm"><i
+                                    class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="project-card glass-card">
+                        <h3 class="project-title">CineMax</h3>
+                        <div class="project-description">
+                            <p>A robust movie ticketing platform featuring real-time seat selection and showtime
+                                recommendations, backed by a normalized SQL database optimized for 500+ concurrent
+                                bookings.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>MySQL</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                        <div class="project-actions">
+                            <!-- Git Repo Link -->
+                            <a href="https://github.com/Zulkar-Jahin/CineMax" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 4 -->
+                    <div class="project-card glass-card">
+                        <h3 class="project-title">Bargain Box</h3>
+                        <div class="project-description">
+                            <p>A full-featured Android e-commerce marketplace for second-hand goods, integrating
+                                real-time Firebase chat and a secure cart system with an ASP.NET MVC backend.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Android (Java)</li>
+                            <li>ASP.NET MVC</li>
+                            <li>Firebase</li>
+                            <li>Mobile UX</li>
+                        </ul>
+                        <div class="project-actions">
+                            <!-- Git Repo Link -->
+                        </div>
+                    </div>
+                    <!-- Project Card 5 -->
+                    <div class="project-card glass-card">
+                        <h3 class="project-title">Game : PacMan</h3>
+                        <div class="project-description">
+                            <p>A performance-optimized 2D arcade engine built from scratch in Java, featuring custom
+                                rendering loops and modular game logic driven by core OOP principles.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Java</li>
+                            <li>OOP</li>
+                            <li>Game Engine</li>
+                            <li>Desktop Application</li>
+                        </ul>
+                        <div class="project-actions">
+                            <!-- Git Repo Link -->
+                            <a href="https://github.com/Zulkar-Jahin/PacMan-Game-" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary btn-sm"><i
+                                    class="fa-brands fa-github"></i> Code</a>
+                            <!-- Live Preview Link -->
+                        </div>
+                    </div>
+                    <!-- Project Card 6 -->
+                    <div class="project-card glass-card">
+                        <h3 class="project-title">QuoteBot</h3>
+                        <div class="project-description">
+                            <p>A lightweight JavaScript application using custom array logic and DOM manipulation to
+                                deliver a seamless, minimalist quote-sharing experience.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>DOM Manipulation</li>
+                            <li>Responsive UI</li>
+                        </ul>
+                        <div class="project-actions">
+                            <!-- Git Repo Link -->
+                            <a href="https://github.com/Zulkar-Jahin/QuoteBot" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+                            <!-- Live Preview Link -->
+                            <a href="https://quote-bot-sigma.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-secondary btn-sm"><i class="fa-solid fa-up-right-from-square"></i>
+                                Live</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="main-section fade-up">
+            <div class="container">
+                <h2 class="section-title">Achievements</h2>
+                <div class="achievements-list">
+                    <div class="achievement-item"><i class="fa-solid fa-trophy accent-text"></i>Regional Finalist at
+                        <strong>ICPC Dhaka Regional 2024</strong>, competing against the top programming talent in the
+                        country.
+                    </div>
+
+                    <div class="achievement-item"><i class="fa-solid fa-trophy accent-text"></i>Contestant at
+                        <strong>IUPC 2025</strong> (Inter-University Programming Contest), representing the university
+                        at a national level.
+                    </div>
+
+                    <div class="achievement-item"><i class="fa-solid fa-trophy accent-text"></i>3rd Position in
+                        <strong>IAPC 2024</strong> (Intra AUST Programming Contest), along with multiple top 10 rankings
+                        in previous years.
+                    </div>
+
+                    <div class="achievement-item"><i class="fa-solid fa-certificate accent-text"></i> AUST ACM Lab
+                        Participant since 2023</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Positions of Responsibility Section -->
+        <section id="responsibility" class="main-section fade-up">
+            <div class="container">
+                <h2 class="section-title">Soft Skills in
+                    <span style="color: #fb8c00;"> Action</span>
+                </h2>
+                <div class="responsibility-grid">
+
+                    <!-- Item 1 -->
+                    <div class="responsibility-card glass-card hover-glow">
+                        <div class="resp-icon"><i class="fa-solid fa-award"></i></div>
+                        <div class="resp-content">
+                            <h3>Member</h3>
+                            <h4>AUST Programming and Informatics Club</h4>
+                            <span class="resp-date">June, 2023 – Present</span>
+                            <p>Competed in IUPC 2025 and coordinated training sessions to help juniors improve their
+                                programming skills.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="responsibility-card glass-card hover-glow">
+                        <div class="resp-icon"><i class="fa-solid fa-award"></i></div>
+                        <div class="resp-content">
+                            <h3>Organizer</h3>
+                            <h4>CSE Carnival 5.0, AUST</h4>
+                            <span class="resp-date">Feb 1, 2025 - Apr 13, 2025</span>
+                            <p>The most awaited legacy event of CSE department. Organized IAPC (Intra AUST Programming
+                                Contest), Code Refactoring Contest, Software Exhibition and others.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="responsibility-card glass-card hover-glow">
+                        <div class="resp-icon"><i class="fa-solid fa-award"></i></div>
+                        <div class="resp-content">
+                            <h3>Executive Committee</h3>
+                            <h4>Josephite Math Club, SJHSS</h4>
+                            <span class="resp-date">2019-2020</span>
+                            <p> Co-ordinated a nationwide Math Olympiad at Saint Joseph Higher Secondary School in 2019,
+                                managing end-to-end logistics and participant engagement.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="responsibility-card glass-card hover-glow">
+                        <div class="resp-icon"><i class="fa-solid fa-award"></i></div>
+                        <div class="resp-content">
+                            <h3>Executive Committee</h3>
+                            <h4>Scintilla Science Club, SJHSS</h4>
+                            <span class="resp-date">2018-2019</span>
+                            <p>Served as an executive committee member, organizing science festivals and events.</p>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="responsibility-card glass-card hover-glow">
+                        <div class="resp-icon"><i class="fa-solid fa-award"></i></div>
+                        <div class="resp-content">
+                            <h3>Member</h3>
+                            <h4>Boson Biggan Sangho, Tangail</h4>
+                            <span class="resp-date">2015-2018</span>
+                            <p>Contributed as a member to organize Math Olympiad training sessions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats (GitHub / Leetcode / Codeforces / Codechef / Atcoder ) -->
+        <section id="leetcode" class="main-section fade-up">
+            <div class="container">
+                <h2 class="section-title">Activity Stats</h2>
+                <div class="stats-grid">
+                    <div class="stat-card glass-card hover-glow full-width">
+                        <h3><i class="fa-brands fa-github"></i> GitHub Stats</h3>
+                        <div class="stat-content">
+                            <!-- GitHub Streak Stats -->
+                            <img src="https://github-readme-streak-stats.herokuapp.com/?user=zulkar-jahin&theme=dark"
+                                class="stat-img-large" alt="GitHub Stats" />
+                        </div>
+                    </div>
+                    <div class="stat-card glass-card hover-glow">
+                        <h3><i class="fa-solid fa-code"></i> LeetCode Journey</h3>
+                        <div class="stat-content">
+                            <img src="https://leetcard.jacoblin.cool/zulkar_313?theme=dark" alt="LeetCode Stats"
+                                class="stat-img-std" />
+                        </div>
+                    </div>
+
+                    <!-- Codeforces Stats Section -->
+                    <div class="stat-card glass-card hover-glow">
+                        <h3><i class="fa-solid fa-chart-simple"></i> Codeforces</h3>
+                        <div class="stat-content">
+                            <img src="https://codeforces-readme-stats.vercel.app/api/card?username=Zulkar_Jahin_Nizu&theme=dark"
+                                alt="Codeforces Stats" class="stat-img-std" />
+                        </div>
+                    </div>
+
+                    <!-- CodeChef Stats Section -->
+                    <div class="stat-card glass-card hover-glow">
+                        <h3><i class="fa-solid fa-utensils"></i> CodeChef</h3>
+                        <div class="stat-content">
+                            <img src="https://codechef-api.vercel.app/rating/zulkar_313" alt="CodeChef Stats"
+                                class="stat-img-std" />
+                        </div>
+                    </div>
+
+                    <!-- AtCoder Stats Section -->
+                    <div class="stat-card glass-card hover-glow">
+                        <h3><i class="fa-solid fa-a"></i> AtCoder</h3>
+                        <div class="stat-content">
+                            <!-- Replace 'zulkar_313' with your AtCoder username -->
+                            <img src="https://atcoder-readme-stats.vercel.app/api/card?username=zulkar_313&theme=dark"
+                                alt="AtCoder Stats" class="stat-img-std" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <!--
+        <section id="blog" class="main-section fade-up">
+            <div class="container">
+                <h2 class="section-title"><span class="accent-text">05.</span> Latest Writings</h2>
+                <div class="blog-list">
+                    <a href="#" class="blog-item glass-card hover-glow">
+                        <span class="blog-date">Oct 12, 2023</span>
+                        <h3>Understanding Asynchronous JavaScript</h3>
+                        <p>A deep dive into promises, async/await, and the event loop...</p>
+                    </a>
+                    <a href="#" class="blog-item glass-card hover-glow">
+                        <span class="blog-date">Sep 28, 2026</span>
+                        <h3>Why I Chose Web Development</h3>
+                        <p>My journey into code and the resources that helped me start...</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!-- Testimonials (Hidden logic) -->
+        <div id="testimonials" class="hidden-section" aria-hidden="true">
+            <!-- 
+                <section class="testimonials">
+                    <blockquote>"Amazing developer to work with!" - Manager</blockquote>
+                </section>
+            -->
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="main-section fade-up">
+            <div class="container">
+                <div class="contact-header text-center mb-8">
+                    <h1 class="heading-large">Get In Touch</h1>
+                    <div class="heading-underline mx-auto"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left Side: Contact Info -->
+                    <div class="contact-info">
+                        <h2 class="contact-subtitle">Let's work together!</h2>
+                        <p class="body-text mt-4">
+                            Although I'm currently looking for any new opportunities, my inbox is always open. Whether
+                            you have
+                            a question or just want to say hi, I'll try my best to get back to you!
+                        </p>
+
+                        <div class="contact-details mt-8">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <span>zulkar.jahin@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                                <span>+880 1858-138027</span>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <span>Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-social-pills mt-8">
+                            <a href="https://github.com/zulkar-jahin" target="_blank" class="social-pill">GitHub</a>
+                            <a href="https://linkedin.com/in/zulkar-jahin-nizu-671729313/" target="_blank"
+                                class="social-pill">LinkedIn</a>
+                            <a href="https://wa.me/8801858138027" target="_blank" class="social-pill">WhatsApp</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Contact Form -->
+                    <div class="contact-form-wrapper glass-card">
+                        <form action="https://formsubmit.co/zulkar.jahin@gmail.com" method="POST" class="contact-form">
+                            <!-- Anti-spam and Formsubmit UI configuration -->
+                            <input type="hidden" name="_subject" value="New message from Portfolio!">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+
+                            <!-- Input Fields -->
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" class="form-control" placeholder="Your Message" rows="5"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-secondary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/zulkar-jahin-nizu-671729313/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/8801858138027"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:zulkar.jahin@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Gmail">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                </a>
+            </div>
+            <p>Built with <i class="fa-solid fa-heart accent-text"></i> by Zulkar-Jahin.</p>
+        </footer>
+
+        <!-- Command Palette Overlay -->
+        <div id="commandPalette" class="cmd-palette-wrapper" hidden>
+            <div class="cmd-palette glass-panel">
+                <div class="cmd-input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="cmdInput" placeholder="Search commands or jump to section..."
+                        autocomplete="off">
+                </div>
+                <div class="cmd-results">
+                    <div class="cmd-group">Navigation</div>
+                    <button class="cmd-item" data-action="scroll" data-target="#education"><i
+                            class="fa-solid fa-graduation-cap"></i>
+                        Go to Education</button>
+                    <button class="cmd-item" data-action="scroll" data-target="#experience"><i
+                            class="fa-solid fa-briefcase"></i>
+                        Go to Experience</button>
+                    <button class="cmd-item" data-action="scroll" data-target="#projects"><i
+                            class="fa-solid fa-laptop-code"></i> Go to Projects</button>
+                    <button class="cmd-item" data-action="scroll" data-target="#leetcode"><i
+                            class="fa-solid fa-code"></i> Go to LeetCode</button>
+                    <button class="cmd-item" data-action="scroll" data-target="#contact"><i
+                            class="fa-solid fa-envelope"></i> Go to Contact</button>
+                    <div class="cmd-group">Actions</div>
+                    <button class="cmd-item" data-action="theme"><i class="fa-solid fa-moon"></i> Toggle Theme</button>
+                    <button class="cmd-item" data-action="resume"><i class="fa-solid fa-file-pdf"></i> View
+                        Resume</button>
+                    <button class="cmd-item" data-action="cp-profile"><i class="fa-solid fa-code"></i> Show CP
+                        Profile</button>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
