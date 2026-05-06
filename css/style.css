@@ -25,7 +25,8 @@
     /* Feature Specific */
     --accent-responsibility: #9b6dff;
     --accent-date: #64ffda;
-    --nav-active-bg: #10614b; /* dark mode active nav background */
+    --nav-active-bg: #10614b;
+    /* dark mode active nav background */
 }
 
 .light-theme {
@@ -45,7 +46,8 @@
     /* Feature Specific */
     --accent-responsibility: #4b3061;
     --accent-date: #008b8b;
-    --nav-active-bg: #0a0a0a; /* light mode active nav background */
+    --nav-active-bg: #0a0a0a;
+    /* light mode active nav background */
 }
 
 /* Base Styles */
@@ -236,6 +238,7 @@ a:hover {
     background: var(--nav-active-bg);
     color: var(--text-primary);
 }
+
 .nav-actions {
     display: flex;
     gap: 25px;
@@ -394,6 +397,100 @@ a:hover {
 .mt-4 {
     margin-top: 1rem;
 }
+
+/* github activity section */
+.github-container {
+    background-color: #00130e;
+    /* Zinc-900 */
+    padding: 24px;
+    border-radius: 8px;
+    color: #a1a1aa;
+    font-family: sans-serif;
+}
+
+.activity-text {
+    font-size: larger;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--accent);
+}
+
+.github-grid {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.week-column {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.day-square {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.day-square:hover {
+    outline: 2px solid #58f755;
+}
+#total-contributions{
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Roboto','Oxigen', 'Segoe UI' ;
+}
+
+.highlight {
+    color: rgb(10, 140, 196);
+}
+
+.github-footer {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* Legend Colors */
+.contribution-legend {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contribution-legend div {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
+
+.level-0 {
+    background-color: #0b2a38;
+}
+
+.level-1 {
+    background-color: #144a4f;
+}
+
+.level-2 {
+    background-color: #1f7a6b;
+}
+
+.level-3 {
+    background-color: #22bfa0;
+}
+
+.level-4 {
+    background-color: #27e9b5;
+}
+
+
 
 /* Skills & Goals */
 .skills-grid {

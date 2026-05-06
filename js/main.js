@@ -210,3 +210,66 @@ function initNavActive() {
     sections.forEach(sec => observer.observe(sec));
 }
 
+
+const username = 'zulkar-jahin';
+
+async function fetchGitHubActivity() {
+    try {
+        const response = await fetch(`https://api.github.com/users/${username}/events?per_page=100`);
+        const events = await response.json();
+        const contributionMap = {};
+        const today = new Date();
+
+        for (let i = 0; i < 365; i++) {
+            const date = new Date(today);
+            date.setDate(date.getDate() - i);
+            const dateStr = date.toISOString().split('T')[0];
+            contributionMap[dateStr] = 0;
+        }
+
+        events.forEach(event => {
+            const date = event.created_at.split('T')[0];
+            if (contributionMap[date] !== undefined) contributionMap[date]++;
+        });
+
+        renderCalendar(contributionMap);
+    } catch (error) {
+        document.getElementById('total-contributions').innerText = "Data load failed";
+    }
+}
+
+function getIntensityColor(count) {
+    if (count === 0) return '#0b2a38';
+    if (count <= 2) return '#144a4f';
+    if (count <= 5) return '#1f7a6b';
+    if (count <= 8) return '#22bfa0';
+    return '#27e9b5';
+}
+
+function renderCalendar(contributions) {
+    const grid = document.getElementById('github-grid');
+    const dates = Object.keys(contributions).sort();
+    const total = Object.values(contributions).reduce((a, b) => a + b, 0);
+
+    // document.getElementById('total-contributions').innerText = `${total} contributions in the last year`;
+    document.getElementById('total-contributions').innerHTML = `<span class="highlight">${total}</span> contributions in the last year`;
+    grid.innerHTML = '';
+
+    for (let i = 0; i < dates.length; i += 7) {
+        const weekColumn = document.createElement('div');
+        weekColumn.className = 'week-column';
+
+        const weekDates = dates.slice(i, i + 7);
+        weekDates.forEach(date => {
+            const count = contributions[date];
+            const daySquare = document.createElement('div');
+            daySquare.className = 'day-square';
+            daySquare.style.backgroundColor = getIntensityColor(count);
+            daySquare.title = `${date}: ${count} contributions`;
+            weekColumn.appendChild(daySquare);
+        });
+        grid.appendChild(weekColumn);
+    }
+}
+
+fetchGitHubActivity();
