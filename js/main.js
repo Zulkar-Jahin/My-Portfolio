@@ -213,6 +213,7 @@ function initNavActive() {
 
 const username = 'zulkar-jahin';
 
+
 async function fetchGitHubActivity() {
     try {
         const response = await fetch(`https://api.github.com/users/${username}/events?per_page=100`);
@@ -238,6 +239,7 @@ async function fetchGitHubActivity() {
     }
 }
 
+
 function getIntensityColor(count) {
     if (count === 0) return '#0b2a38';
     if (count <= 2) return '#144a4f';
@@ -252,7 +254,7 @@ function renderCalendar(contributions) {
     const total = Object.values(contributions).reduce((a, b) => a + b, 0);
 
     // document.getElementById('total-contributions').innerText = `${total} contributions in the last year`;
-    document.getElementById('total-contributions').innerHTML = `<span class="highlight">${total}</span> contributions in the last year`;
+    document.getElementById('total-contributions').innerHTML = `<span class="highlight">${total} contributions</span> in the last year`;
     grid.innerHTML = '';
 
     for (let i = 0; i < dates.length; i += 7) {
