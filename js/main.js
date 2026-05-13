@@ -212,8 +212,6 @@ function initNavActive() {
 
 
 const username = 'zulkar-jahin';
-
-
 async function fetchGitHubActivity() {
     try {
         const response = await fetch(`https://api.github.com/users/${username}/events?per_page=100`);
@@ -275,3 +273,4 @@ function renderCalendar(contributions) {
 }
 
 fetchGitHubActivity();
+
